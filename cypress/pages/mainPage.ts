@@ -1,13 +1,19 @@
-import basePage from './basePage';
+import basePage from './BasePage';
+import HistoryList from './HistoryList';
+
 
 class MainPage extends basePage {
   baseURL: string;
  
 
   constructor() {
-    super('https://atid.store/');
+    super('https://web2.0calc.com');
   }
 }
 
 const mainPage = new MainPage();
+const history = new HistoryList();
 export default mainPage;
+
+
+
